@@ -1,8 +1,18 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ASCA,AAAA,IAAI,AAAC,CACD,MAAM,CAAE,OAAO,CAClB",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/layout/_001-header.scss",
+        "../sass/layout/_002-hero.scss",
+        "../sass/layout/_003-about-us.scss",
+        "../sass/layout/_004-services-and-prices.scss",
+        "../sass/layout/_005-our-achievments.scss",
+        "../sass/layout/_006-our-specialists.scss",
+        "../sass/layout/_007-work-examples.scss",
+        "../sass/layout/_008-sign-up.scss",
+        "../sass/layout/_009-contacts.scss",
+        "../sass/layout/_010-footer.scss"
     ],
     "names": [],
     "file": "main.min.css"

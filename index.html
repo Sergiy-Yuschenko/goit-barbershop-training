@@ -8,41 +8,412 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+
+                    <!--HEADER-->
     <header>
-        <div class="container"></div>
+        <div class="container">
+            <a href="./" aria-label="логотип сайта">
+                <svg class="logo">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="menu-container">
+                <nav class="site-nav">
+                <ul >
+                    <li>
+                        <a href="./">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги и цены</a>
+                     </li>
+                    <li>
+                        <a href="#">Мастера</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <address>
+                    <a href="tel:+380441111111">+38 044 111 11 11</a>
+                </address>
+                <button type="button">
+                    онлайн-запись
+                </button>
+
+                </nav>
+            </div>
+        </div>
     </header>
-    <maim>
+    <main>
+
+                            <!--HERO-->
         <section class="hero">
             <div class="container">
-                <div></div>
-                <div></div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow noreferrer">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener nofollow noreferrer">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p lang="en">A hair salon for men in Kyiv</p>
+                    <h1 lang ="en">BarberShop</h1>
+                    <p>Мы эксперты в модных мужских стрижках. 
+                        Работаем быстро, осторожно и со вкусом.</p>
+                </div>
             </div>
         </section>
+
         <!--ABOUT US-->
         <section class="about-us">
-            <div class="container"></div>
+            <div class="container">
+                <div>
+                    <uL>
+                        <li>
+                            <picture>
+                                <source srcset="./images/about-us/about-us-1-tabl.webp 1x, ./images/about-us/about-us-1-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                                <source srcset="./images/about-us/about-us-1-tabl.jpg 1x, ./images/about-us/about-us-1-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/about-us/about-us-1-desk.webp 1x, ./images/about-us/about-us-1-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/about-us/about-us-1-desk.jpg 1x, ./images/about-us/about-us-1-desk-2x.jpg 2x" media="(min-width: 768px)">
+                                <img src="./images/about-us/about-us-1-tabl.jpg" alt="барбер бреет бороду">
+                            </picture>
+                        </li>
+                        <li>
+                            <picture>
+                                <source srcset="./images/about-us/about-us-2-tabl.webp 1x, ./images/about-us/about-us-2-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                                <source srcset="./images/about-us/about-us-2-tabl.jpg 1x, ./images/about-us/about-us-2-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/about-us/about-us-2-desk.webp 1x, ./images/about-us/about-us-2-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/about-us/about-us-2-desk.jpg 1x, ./images/about-us/about-us-2-desk-2x.jpg 2x" media="(min-width: 768px)">
+                                <img src="./images/about-us/about-us-2-tabl.jpg" alt="барбер стрижет">
+                            </picture>
+                        </li>
+                    </uL>
+                </div>
+                <div>
+                    <p>О нас</p>
+                    <h2>Лучший Барбершоп твоего города</h2>
+                    <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                    <p>Мы команда, которая никогда не останавливается на достигнутом 
+                        и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
+                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+                    </p>
+                    <button type="button">онлайн-запись</button>
+                </div>
+            </div>
         </section>
+
+        <!-- SERVICES AND PRICES-->
         <section class="services-and-prices">
-            <div class="container"></div>
+            <div class="container">
+                <p>Проведи время в компании лучших мастеров</p>
+                <h2>Услуги и цены</h2>
+                <ul>
+                    <li><span>Мужская стрtижка</span><span>от 300 грн.</span></li>
+                    <li><span>Стрижка бороды</span><span>от 200 грн.</span></li>
+                    <li><span>Стрижка усов</span><span></span>от 200 грн.</li>
+                    <li><span>Бритье опасной бритвой</span><span>от 200 грн.</span></li>
+                </ul>
+                <ul>
+                    <li><span>Cтрижка у стажера</span><span>от 50 грн.</span></li>
+                    <li><span>Стрижка под насадку</span><span>от 200 грн.</span></li>
+                    <li><span>Детская стрижка (до 12 лет)</span>от 300 грн.<span></span></li>
+                    <li><span>Камуфлирование седины</span><span></span>от 200 грн.</li>
+                </ul>
+                <button>онлайн-запись</button>
+            </div>
         </section>
+
+        <!--OUR ACHIEVMENTS-->
         <section class="our-achievments">
-            <div class="container"></div>
+            <div class="container">
+                <div></div>
+                    <p>старая традиционная школа</p>
+                    <h2>Почему приходят именно к нам?</h2>
+                    <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
+                <div>
+                    <ul>
+                        <li>
+                            <p>600</p>
+                            <p>Довольных клиентов в день</p>
+                        </li>
+                        <li>
+                            <p>50</p>
+                            <p>Наград за отличный сервис </p>
+                        </li>
+                        <li>
+                            <p>20</p>
+                            <p>Лучших мастеров Киева </p>
+                        </li>
+                        <li>
+                            <p>100</p>
+                            <p>Подарков постоянным клиентам</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+        <!--OUR SPECIALISTS-->
         <section class="our-specialists">
-            <div class="container"></div>
+            <div class="container">
+                <p>для настоящих ценителей атмосферы</p>
+                <h2>Наши мастера</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <picture>
+                                <source srcset="./images/our-specialists/specialist-1-mob.webp 1x, ./images/our-specialists/specialist-1-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-1-mob.jpg 1x, ./images/our-specialists/specialist-1-mob-2x.jpg 2x" media="(max-width: 479px)">
+                                <source srcset="./images/our-specialists/specialist-1-tabl.webp 1x, ./images/our-specialists/specialist-1-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-1-tabl.jpg 1x, ./images/our-specialists/specialist-1-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/our-specialists/specialist-1-desk.webp 1x, ./images/our-specialists/specialist-1-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-1-desk.jpg 1x, ./images/our-specialists/specialist-1-desk-2x.jpg 2x" media="(min-width: 768px)">
+                                <img src="./images/our-specialists/specialist-1-mob.jpg" alt="<Барбер бреет бороду">
+                            </picture>
+                            <h3 lang="en">John Smith</h3>
+                            <p lang="en">Extreme Barber</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <picture>
+                                <source srcset="./images/our-specialists/specialist-2-mob.webp 1x, ./images/our-specialists/specialist-2-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-2-mob.jpg 1x, ./images/our-specialists/specialist-2-mob-2x.jpg 2x" media="(max-width: 479px)">
+                                <source srcset="./images/our-specialists/specialist-2-tabl.webp 1x, ./images/our-specialists/specialist-2-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-2-tabl.jpg 1x, ./images/our-specialists/specialist-2-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/our-specialists/specialist-2-desk.webp 1x, ./images/our-specialists/specialist-2-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-2-desk.jpg 1x, ./images/our-specialists/specialist-2-desk-2x.jpg 2x" media="(min-width: 768px)">
+                                <img src="./images/our-specialists/specialist-2-mob.jpg" alt="<Барбер бреет бороду">
+                            </picture>
+                            <h3 lang="en">Michele Doe</h3>
+                            <p lang="en">Extreme Barber</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <picture>
+                                <source srcset="./images/our-specialists/specialist-3-mob.webp 1x, ./images/our-specialists/specialist-3-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-3-mob.jpg 1x, ./images/our-specialists/specialist-3-mob-2x.jpg 2x" media="(max-width: 479px)">
+                                <source srcset="./images/our-specialists/specialist-3-tabl.webp 1x, ./images/our-specialists/specialist-3-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-3-tabl.jpg 1x, ./images/our-specialists/specialist-3-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/our-specialists/specialist-3-desk.webp 1x, ./images/our-specialists/specialist-3-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/our-specialists/specialist-3-desk.jpg 1x, ./images/our-specialists/specialist-3-desk-2x.jpg 2x" media="(min-width: 768px)">
+                                <img src="./images/our-specialists/specialist-3-mob.jpg" alt="<Барбер бреет бороду">
+                            </picture>
+                            <h3 lang="en">Alan Black</h3>
+                            <p lang="en">Extreme Barber</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                        <svg>
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="about-barbershop">
-            <div class="container"></div>
+
+        <!--WORK EXAMPLES-->
+        <section class="work-examples">
+            <div class="container">
+                <p>На латинском языке “барба” означает “борода”</p>
+                <h2>Примеры работ мастеров</h2>
+                <ul>
+                    <li>
+                        <picture>
+                            <source srcset="./images/work-examples/barbershop-1-mob.webp 1x, ./images/work-examples/barbershop-1-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-1-mob.jpg 1x, ./images/work-examples/barbershop-1-mob-2x.jpg 2x" media="(max-width: 479px)">
+                            <source srcset="./images/work-examples/barbershop-1-tabl.webp 1x, ./images/work-examples/barbershop-1-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-1-tabl.jpg 1x, ./images/work-examples/barbershop-1-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/work-examples/barbershop-1-desk.webp 1x, ./images/work-examples/barbershop-1-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-1-desk.jpg 1x, ./images/work-examples/barbershop-1-desk-2x.jpg 2x" media="(min-width: 768px)">
+                            <img src="./images/work-examples/barbershop-1-mob.jpg" alt="Мастер стрижет клиента">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/work-examples/barbershop-2-mob.webp 1x, ./images/work-examples/barbershop-2-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-2-mob.jpg 1x, ./images/work-examples/barbershop-2-mob-2x.jpg 2x" media="(max-width: 479px)">
+                            <source srcset="./images/work-examples/barbershop-2-tabl.webp 1x, ./images/work-examples/barbershop-2-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-2-tabl.jpg 1x, ./images/work-examples/barbershop-2-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/work-examples/barbershop-2-desk.webp 1x, ./images/work-examples/barbershop-2-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-2-desk.jpg 1x, ./images/work-examples/barbershop-2-desk-2x.jpg 2x" media="(min-width: 768px)">
+                            <img src="./images/work-examples/barbershop-2-mob.jpg" alt="Мастер бреет бороду клиенту">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/work-examples/barbershop-3-mob.webp 1x, ./images/work-examples/barbershop-3-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-3-mob.jpg 1x, ./images/work-examples/barbershop-3-mob-2x.jpg 2x" media="(max-width: 479px)">
+                            <source srcset="./images/work-examples/barbershop-3-tabl.webp 1x, ./images/work-examples/barbershop-3-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-3-tabl.jpg 1x, ./images/work-examples/barbershop-3-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/work-examples/barbershop-3-desk.webp 1x, ./images/work-examples/barbershop-3-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-3-desk.jpg 1x, ./images/work-examples/barbershop-3-desk-2x.jpg 2x" media="(min-width: 768px)">
+                            <img src="./images/work-examples/barbershop-3-mob.jpg" alt="Мастер распаривает лицо клиенту">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/work-examples/barbershop-4-mob.webp 1x, ./images/work-examples/barbershop-4-mob-2x.webp 2x" media="(max-width: 479px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-4-mob.jpg 1x, ./images/work-examples/barbershop-4-mob-2x.jpg 2x" media="(max-width: 479px)">
+                            <source srcset="./images/work-examples/barbershop-4-tabl.webp 1x, ./images/work-examples/barbershop-4-tabl-2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-4-tabl.jpg 1x, ./images/work-examples/barbershop-4-tabl-2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/work-examples/barbershop-4-desk.webp 1x, ./images/work-examples/barbershop-4-desk-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/work-examples/barbershop-4-desk.jpg 1x, ./images/work-examples/barbershop-4-desk-2x.jpg 2x" media="(min-width: 768px)">
+                            <img src="./images/work-examples/barbershop-4-mob.jpg" alt="Мастер стрижет клиента">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
         </section>
         <div class="container">
+
+            <!--SIGN UP-->
             <section class="sign-up">
-                <div class="container"></div>
+                <div class="container">
+                    <h2>Онлайн-запись</h2>
+                </div>
             </section>
+
+            <!--CONTACTS-->
             <section class="contacts">
-                <div class="container"></div>
+                <div class="container">
+                    <h2>Контакты</h2>
+                    <address>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg class="svg">
+                                        <use href="./images/sprite.svg#icon-map-pin"></use>
+                                    </svg>
+                                    <p>ул. Васильковая, 7А
+                                        Киев, 08132</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+380441111111">
+                                    <svg class="svg">
+                                        <use href="./images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <p>+38 044 111 11 11</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:barbershop@email.com">
+                                    <svg class="svg">
+                                        <use href="./images/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                    <p>barbershop@email.com</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                    <p>Ежедневно <time>с 9:00 до 22:00</time></p>
+                </div>
             </section>
         </div>
-    </maim>
-    <footer></footer>   
+    </main>
+    <footer>
+        <div class="container">
+            <p>&#169 Copyright 2020</p>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow noreferrer">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener nofollow noreferrer">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </footer>   
 </body>
 </html>

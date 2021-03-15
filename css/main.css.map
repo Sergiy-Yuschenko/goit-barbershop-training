@@ -1,8 +1,18 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACCA,6CAA6C;ACD7C,oDAAoD;ACApD,wDAAwD;ACAxD,mEAAmE;ACAnE,+DAA+D;ACA/D,+DAA+D;ACA/D,6DAA6D;ACA7D,uDAAuD;ACAvD,wDAAwD;AACxD,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,OAAO;CAClB",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/layout/_001-header.scss",
+        "../sass/layout/_002-hero.scss",
+        "../sass/layout/_003-about-us.scss",
+        "../sass/layout/_004-services-and-prices.scss",
+        "../sass/layout/_005-our-achievments.scss",
+        "../sass/layout/_006-our-specialists.scss",
+        "../sass/layout/_007-work-examples.scss",
+        "../sass/layout/_008-sign-up.scss",
+        "../sass/layout/_009-contacts.scss",
+        "../sass/layout/_010-footer.scss"
     ],
     "names": [],
     "file": "main.css"
