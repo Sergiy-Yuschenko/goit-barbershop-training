@@ -1,13 +1,332 @@
+@charset "UTF-8";
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --main-font: 'Open Sans', Open Sans, sans-serif;
+  /*головний шрифт для більшої частини тексту*/
+  --heading-font: 'Raleway', Raleway, sans-serif;
+  /*шрифт для заголовків */
+  --accent-color: #ff6c00;
+  --title-text-color: #303030;
+  --title-text-color-dark-theme: #ffffff;
+  --undertitle-color-dark-theme: rgba(157, 164, 189, 0.6);
+  --description-text: #555555;
+  --description-text-dark-theme: #9da4bd;
+  --social-list-link-backgr: #ffffff;
+  --additional-background-first: #191c26;
+  --additional-background-cecond: #f7f7f7;
+}
+
+.container {
+  font-family: var(--main-font);
+  color: var(--title-text-color);
+}
+
+/*================= COMPONENTS  =================*/
+/*----------------- TEXT COMPONENTS -----------------*/
+/*----------------- COMPONENT DESCRIPTION PARAGRAPH  -----------------*/
+.description-paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--description-text);
+}
+
+.description-paragraph.dark-theme {
+  color: var(--description-text-dark-theme);
+}
+
+/*----------------- COMPONENT TITLE H2 -----------------*/
+.title-h2 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+  color: var(--title-text-color);
+}
+
+.title-h2.dark-theme {
+  color: var(--title-text-color-dark-theme);
+}
+
+/*----------------- TEXT COMPONENTS END -----------------*/
+/*----------------- COMPONENT BUTTON -----------------*/
+.modal-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.modal-button:hover,
+.modal-button :focus {
+  color: var(--title-text-color-dark-theme);
+  background-color: var(--accent-color);
+}
+
+.modal-button.dark-theme {
+  color: var(--title-text-color-dark-theme);
+}
+
+/*----------------- COMPONENT BUTTON END -----------------*/
+/*----------------- COMPONENT SOCIAL LINKS -----------------*/
+.social-links {
+  display: flex;
+}
+
+.social-links__item {
+  display: flex;
+  align-items: center;
+}
+
+.social-links__item:first-child:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--title-text-color);
+}
+
+.social-links__item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.social-links__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--title-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.social-links__link:hover,
+.social-links__link :focus {
+  color: var(--accent-color);
+}
+
+/*----------------- COMPONENT SOCIAL LINKS END -----------------*/
+/*----------------- COMPONENT UNDERTITLE  -----------------*/
+.undertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.undertitle:before {
+  content: '';
+  display: i nline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--title-text-color);
+}
+
+.undertitle.dark-theme {
+  color: var(--undertitle-color-dark-theme);
+}
+
+.undertitle.dark-theme:before {
+  background-color: var(--undertitle-color-dark-theme);
+}
+
+/*----------------- COMPONENT UNDERTITLE END  -----------------*/
+/*----------------- COMPONENT SOCIAL LIST -----------------*/
+.social-list {
+  display: flex;
+}
+
+.social-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 25px;
+  display: flex;
+  background-color: var(--social-list-link-backgr);
+}
+
+.social-list__link:hover .social-list__icon {
+  fill: var(--accent-color);
+}
+
+.social-list__icon {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+}
+
+/*----------------- COMPONENT SOCIAL LIST END-----------------*/
 /*================= HEDER =================*/
+.logo__icon {
+  width: 68.93px;
+  height: 55.46px;
+}
+
+.site-nav {
+  background-color: black;
+}
+
+.header__tel,
+.site-nav__list-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--title-text-color-dark-theme);
+}
+
+.header__tel:hover,
+.header__tel :focus,
+.site-nav__list-link:hover,
+.site-nav__list-link :focus {
+  color: var(--accent-color);
+}
+
 /*================= HERO SECTION =================*/
+.hero > .container {
+  background-color: var(--additional-background-first);
+}
+
+.hero__title {
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--title-text-color-dark-theme);
+}
+
 /*================= ABOUT US SECTION =================*/
+.about-us__paragraph {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--description-text);
+}
+
 /*================= SERVICES AND PRICES SECTION =================*/
+.services-and-prices > .container {
+  background-color: var(--additional-background-first);
+}
+
+.services-and-prices__list-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--description-text-dark-theme);
+}
+
 /*================= OUR ACHIEVMENTS SECTION =================*/
+/*Параметри шрифту елементів притаманних лише цій секції*/
+.our-achievments__number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #303030;
+}
+
+.our-achievments__description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
 /*================= OUR SPECIALISTS SECTION =================*/
+.our-specialists > .container {
+  background-color: var(--additional-background-cecond);
+}
+
+.our-specialists-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.our-specialists__specialization {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 /*================= WORK EXAMPLES SECTION =================*/
 /*================= SIGN UP SECTION =================*/
+.sign-up > .container {
+  background-color: var(--additional-background-first);
+}
+
 /*================= CONTACTS SECTION =================*/
-.svg {
-  stroke: #9da4bd;
+.contacts > .container {
+  background-color: var(--additional-background-first);
+}
+
+.contacts__link {
+  display: flex;
+}
+
+.contacts__work-schedule,
+.contacts__information {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--description-text-dark-theme);
+}
+
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--description-text-dark-theme);
+}
+
+/*================= FOOTER =================*/
+.footer .container {
+  background: var(--additional-background-cecond);
+}
+
+.footer .copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--description-text-dark-theme);
 }
 /*# sourceMappingURL=main.css.map */

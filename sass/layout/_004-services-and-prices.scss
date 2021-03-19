@@ -1,1 +1,10 @@
 /*================= SERVICES AND PRICES SECTION =================*/
+
+.services-and-prices > .container {
+    background-color: var(--additional-background-first);
+}
+
+.services-and-prices__list-item {
+    @include description-paragraph-font;
+    color: var(--description-text-dark-theme);
+}

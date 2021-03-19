@@ -1,3 +1,25 @@
 
+
 /*================= HEDER =================*/
+.logo__icon {
+    width: 68.93px;
+    height: 55.46px;
+}
+
+//Початок фрагменту, який надалі треба будк видалити
+.site-nav {
+    background-color: black;
+}
+//Rsytwm фрагменту, який надалі треба будк видалити
+
+.header__tel,
+.site-nav__list-link {
+    @include header-font(0.1em);
+    color: var(--title-text-color-dark-theme);
+    &:hover,
+    :focus {
+        color: var(--accent-color);
+    }   
+}
+
 

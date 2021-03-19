@@ -1,7 +1,17 @@
 
 //utils
+@import './utils/001-visually-hidden';
+@import './utils/002-variables';
+@import './utils/003-mixins';
 //base
+@import './base/common';
+@import './base/container';
 //components
+@import './components/001-text-blocks';
+@import './components/002-button';
+@import './components/003-social-links';
+@import './components/004-undertitle';
+@import './components/005-social-list';
 //layout
 @import './layout/001-header';
 @import './layout/002-hero';

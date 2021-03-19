@@ -1,4 +1,24 @@
 /*================= CONTACTS SECTION =================*/
-.svg {
-    stroke: #9da4bd;
+
+.contacts > .container {
+    background-color: var(--additional-background-first);
+}
+
+.contacts__link {
+    display: flex;
+}
+
+.contacts__work-schedule,
+.contacts__information {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: var(--description-text-dark-theme);
+}
+
+.contacts__icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--description-text-dark-theme);
 }

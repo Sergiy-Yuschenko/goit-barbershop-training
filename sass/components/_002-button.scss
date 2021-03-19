@@ -1,0 +1,21 @@
+/*----------------- COMPONENT BUTTON -----------------*/
+
+.modal-button {
+    @include header-font(0.1em);
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    &:hover,
+    :focus {
+        color: var(--title-text-color-dark-theme);
+        background-color: var(--accent-color);
+    }
+}
+
+.modal-button.dark-theme {
+    color: var(--title-text-color-dark-theme);
+}
+
+/*----------------- COMPONENT BUTTON END -----------------*/

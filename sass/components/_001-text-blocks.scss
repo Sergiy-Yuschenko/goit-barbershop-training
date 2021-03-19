@@ -1,0 +1,29 @@
+/*================= COMPONENTS  =================*/
+
+/*----------------- TEXT COMPONENTS -----------------*/
+
+
+
+/*----------------- COMPONENT DESCRIPTION PARAGRAPH  -----------------*/
+
+.description-paragraph {
+    @include description-paragraph-font;
+    color: var(--description-text);
+}
+
+.description-paragraph.dark-theme {
+    color: var(--description-text-dark-theme);
+}
+
+/*----------------- COMPONENT TITLE H2 -----------------*/
+
+.title-h2 {
+    @include title-h2;
+    color: var(--title-text-color);
+    &.dark-theme {
+        color: var(--title-text-color-dark-theme);
+    }
+}
+
+/*----------------- TEXT COMPONENTS END -----------------*/
+

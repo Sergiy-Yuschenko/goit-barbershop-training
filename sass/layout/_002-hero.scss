@@ -1,1 +1,10 @@
 /*================= HERO SECTION =================*/
+
+.hero > .container {
+    background-color: var(--additional-background-first);
+}
+
+.hero__title {
+    @include title-h1;
+    color: var(--title-text-color-dark-theme);
+}

@@ -1,0 +1,24 @@
+/*----------------- COMPONENT UNDERTITLE  -----------------*/
+
+.undertitle {
+    @include undertitle-font;
+    display: flex;
+    align-items: center;
+    &:before {
+        content: '';
+        display:i nline-block;
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+        background-color: var(--title-text-color);
+    }
+    &.dark-theme {
+        color: var(--undertitle-color-dark-theme);
+        &:before {
+            background-color: var(--undertitle-color-dark-theme);
+        }
+        
+    }
+}
+
+/*----------------- COMPONENT UNDERTITLE END  -----------------*/

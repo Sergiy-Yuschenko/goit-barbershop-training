@@ -1,0 +1,72 @@
+
+//Загальні параметри шрифта хедера
+@mixin header-font($letter-spacing) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: $letter-spacing;
+}
+
+//Загальні параметри шрифта андертайтла
+@mixin undertitle-font {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+//Загальні параметри шрифта головного абзацу
+@mixin description-paragraph-font {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+//Загальні параметри шрифта додаткового абзацу
+
+//Загальні параметри шрифта головного заголовка
+
+@mixin title-h1 {
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+//Загальні параметри шрифта заголовка другого рівня
+
+@mixin title-h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+}
+
+//Загальні параметри шрифта соціальних посилань
+@mixin social-links {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+}
+
+//Загальні параметри шрифта додаткового абзацу з описом секції 
+
+@mixin about-us-paragraph {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--description-text);
+
+}
+
+
+
+
+

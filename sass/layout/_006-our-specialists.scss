@@ -1,1 +1,22 @@
 /*================= OUR SPECIALISTS SECTION =================*/
+
+.our-specialists > .container {
+    background-color: var(--additional-background-cecond);
+}
+
+.our-specialists-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.our-specialists__specialization {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}

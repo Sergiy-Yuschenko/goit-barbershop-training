@@ -1,1 +1,4 @@
 /*================= ABOUT US SECTION =================*/
+.about-us__paragraph {
+    @include about-us-paragraph;
+}

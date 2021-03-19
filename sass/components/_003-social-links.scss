@@ -1,0 +1,34 @@
+/*----------------- COMPONENT SOCIAL LINKS -----------------*/
+
+.social-links {
+    display:flex;
+}
+
+.social-links__item {
+    display: flex;
+    align-items: center;
+    &:first-child:before {
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+        background-color: var(--title-text-color);
+    }
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+.social-links__link {
+    @include social-links;
+    color: var(--title-text-color);
+    display: flex;
+    align-items: center;
+    &:hover,
+    :focus {
+        color: var(--accent-color);
+    }
+}
+
+/*----------------- COMPONENT SOCIAL LINKS END -----------------*/
